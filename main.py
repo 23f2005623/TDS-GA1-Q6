@@ -67,7 +67,7 @@ def effective_config(set: list[str] = Query(default=[])):
     env_name = os.environ.get("APP_ENV", "development")
 
     cfg = {                                   # layer 1: defaults
-        "port": 9004,
+        "port": 8000,
         "workers": 1,
         "debug": False,
         "log_level": "info",
